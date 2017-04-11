@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal"
+     tools:context="com.example.movieapp.Screens.Home.HomeFragment"
+    tools:showIn="@layout/activity_home">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:id="@+id/rv_Movies"
+        tools:context=".Screens.Home.HomeFragment"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/fr_detailFragment"
+        android:layout_weight="4"/>
+
+</LinearLayout>
